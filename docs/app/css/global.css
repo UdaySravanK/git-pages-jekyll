@@ -1,0 +1,160 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-toggle {
+    float: right;
+    display: block;
+}
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {height:auto;}
+}
+
+.LoadingIndicator {
+    background: rgba(255, 255, 255, 0.8);
+    display: block;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10005;
+}
+.LoadingIndicator .loading-container {
+    font-size: 14px;
+    width: 280px;
+    height: 60px;
+    position: relative;
+    margin: calc(45%) auto;
+    margin: calc(50vh - 30px) auto;
+    text-align: center;
+}
+.LoadingIndicator .loading-container .loading-message {
+    white-space: wrap;
+    position: relative;
+    bottom: -5px;
+    color: #666;
+}
+.LoadingIndicator .loading-container .loading-spinner {
+    position: relative;
+    display: block;
+    font-size: 8px;
+    margin: 1em auto;
+    text-indent: -9999em;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    background: #767676;
+    background: linear-gradient(to right, #767676 10%, rgba(255, 255, 255, 0) 42%);
+    animation: spinAnim 650ms infinite linear;
+    transform: translateZ(0);
+}
+.LoadingIndicator .loading-container .loading-spinner::before {
+    width: 50%;
+    height: 50%;
+    background: #767676;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+}
+.LoadingIndicator .loading-container .loading-spinner::after {
+    background: #fff;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+@keyframes spinAnim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.drawer-backdrop {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.drawer {
+    background:transparent;
+}
+
+footer {
+    background: darkgrey;
+    padding: 5px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.drawer-footer {
+
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    position: absolute;
+}
+.navbar-brand {
+    color: white !important;
+}
+
+/*page styles*/
+#home {
+    background-color: #28a4c9;
+}
+
+#about {
+    background-color: #1abc9c;
+}
+#about .profile-pic {
+    display: inline;
+    margin: 10px;
+}
+.social-icon {
+    margin: 5px;
+}
+.social-icons {
+
+}
+.p-indent {
+    text-indent: 20px;
+}
